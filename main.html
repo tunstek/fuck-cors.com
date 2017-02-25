@@ -1,28 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>fuck-cors.com</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<h1>Welcome to FUCK-CORS.com!</h1>
+<div class="container">
+  <header>
+    <img src="img/logo.png" alt="Logo" id="Insert_logo" style="background-color:#FFF; display:block;" />
+  </header>
+  <div class="sidebar1" style="background-color:#FFF">
+    <ul class="nav"></ul>
+  <!-- end .sidebar1 -->
+  </div>
+  <article class="content">
+    <h1>Welcome! Thanks for using our service!</h1>
+    <section>
+     <h2>Please set the url GET variable..</h2>
+      <p>&nbsp;</p>
+    </section>
+    <section>
+      <p>Here's an example:</p>
+<pre><code style="padding-left:50px;float:left;">
+$.ajax({
+  url: "http://fuck-cors.com/?url=http://ip.jsontest.com/",
+  dataType: "text",
+  success: function (data) {
+    console.log(data)
+  },
+  error: function (xhr, ajaxOptions, thrownError) {
+    console.log(xhr.status + thrownError);
+  }
+});
+</code></pre>
+    </section>
+    <br style="clear:both">
+    <br>
+    <h2>No information for any request sent to this server is withheld.</h2>
+    <p>Source code is available on GitHub <a href="https://github.com/tunstek/fuck-cors.com">here</a></p>
 
-<p>Should probably write a proper html page for this..</p>
-<br>
-<h1> Please set the url GET variable.. </h1>
-<p>
-  Here's an example:<br>
-  $.ajax({ <br>
-    url: "http://fuck-cors.com/?url=http://ip.jsontest.com/", <br>
-    dataType: "text", <br>
-    success: function (data) { <br>
-      console.log(data) <br>
-    }, <br>
-    error: function (xhr, ajaxOptions, thrownError) { <br>
-      console.log(xhr.status + thrownError); <br>
-    } <br>
-  }); <br>
-</p>
-
-
-
-
+  <!-- end .content --></article>
+    <footer style="background-color:#999;width=100%">
+      <p>&nbsp;</p>
+    </footer>
+<!-- end .container --></div>
 </body>
 </html>

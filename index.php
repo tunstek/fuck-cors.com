@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -32,7 +31,8 @@ if(isset($_GET['url']) && !empty($_GET['url'])) {
   echo $response;
 }
 else {
-    echo(readfile("main.html"));
+    header('Location: main.html');
+    //echo(readfile("main2.html"));
 }
 
 ?>
