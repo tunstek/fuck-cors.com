@@ -19,8 +19,12 @@ if(isset($_GET['url']) && !empty($_GET['url'])) {
   curl_setopt_array($curl, array(
       CURLOPT_RETURNTRANSFER => 1,
       CURLOPT_URL => $_GET['url'],
-      CURLOPT_USERAGENT => 'Fuck_CORS'
+      CURLOPT_USERAGENT => 'Fuck_CORS',
+      CURLOPT_POSTFIELDS => http_build_query($_POST) //Forward all post data
   ));
+
+
+
   // Send the request & save response to $response
   $response = curl_exec($curl);
 
