@@ -1,6 +1,8 @@
 # fuck-cors.com
 A web proxy specifically designed for simple cross-origin AJAX requests.
 
+http://www.fuck-cors.com/main.html
+
 Example:
 ```
 $.ajax({
